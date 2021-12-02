@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B217B4F-25CC-4625-BA1E-9822D6333F48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Juegos</RootNamespace>
+    <AssemblyName>Juegos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cartas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartas.Designer.cs">
+      <DependentUpon>Cartas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choji.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="choji.Designer.cs">
+      <DependentUpon>choji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Itachi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Itachi.Designer.cs">
+      <DependentUpon>Itachi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kakashi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kakashi.Designer.cs">
+      <DependentUpon>Kakashi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Naruto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Naruto.Designer.cs">
+      <DependentUpon>Naruto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Naves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Naves.Designer.cs">
+      <DependentUpon>Naves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RockLee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RockLee.Designer.cs">
+      <DependentUpon>RockLee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sasuke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sasuke.Designer.cs">
+      <DependentUpon>Sasuke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanks.Designer.cs">
+      <DependentUpon>Tanks.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cartas.resx">
+      <DependentUpon>Cartas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choji.resx">
+      <DependentUpon>choji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Itachi.resx">
+      <DependentUpon>Itachi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kakashi.resx">
+      <DependentUpon>Kakashi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Naruto.resx">
+      <DependentUpon>Naruto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Naves.resx">
+      <DependentUpon>Naves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RockLee.resx">
+      <DependentUpon>RockLee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sasuke.resx">
+      <DependentUpon>Sasuke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanks.resx">
+      <DependentUpon>Tanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amaterasu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balaAliada.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balaEnemiga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BalaTanqueE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chojiDA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chojiIA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corazon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espacio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itachi_PrepAtackD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itachi_PrepAtackI.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itachi_walkD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itachi_walkI.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakashi_attack_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakashi_attack_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakashi_run_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakashi_run_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto_walk_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naruto_walk_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NarutoAtack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nave2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NaveEnemiga.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocklee_attack_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocklee_attack_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocklee_walk_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocklee_walk_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sasuke_attack_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sasuke_attack_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sasuke_run_D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sasuke_run_I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanksgb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque1R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque1U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque2R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanque2U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TanqueBalaA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mansion _Hokage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ichiraku.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kasekage_Mansion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House_arena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dll_videojuegos\dll_videojuegos.csproj">
+      <Project>{a3f0999d-11d8-4bf5-9026-40d2a9c7ffe1}</Project>
+      <Name>dll_videojuegos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
